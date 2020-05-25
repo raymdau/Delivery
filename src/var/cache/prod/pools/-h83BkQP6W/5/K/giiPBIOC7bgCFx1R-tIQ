@@ -1,0 +1,161 @@
+<?php //%255BApp%255CEntity%255COrders%2524CLASSMETADATA%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Mapping\\ClassMetadata'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\ClassMetadata')),
+        clone ($p['Doctrine\\ORM\\Id\\IdentityGenerator'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Id\\IdentityGenerator')),
+    ],
+    null,
+    [
+        'stdClass' => [
+            'name' => [
+                'App\\Entity\\Orders',
+            ],
+            'namespace' => [
+                'App\\Entity',
+            ],
+            'rootEntityName' => [
+                'App\\Entity\\Orders',
+            ],
+            'identifier' => [
+                [
+                    'id',
+                ],
+            ],
+            'generatorType' => [
+                4,
+            ],
+            'fieldMappings' => [
+                [
+                    'id' => [
+                        'fieldName' => 'id',
+                        'type' => 'integer',
+                        'scale' => 0,
+                        'length' => null,
+                        'unique' => false,
+                        'nullable' => false,
+                        'precision' => 0,
+                        'columnName' => 'id',
+                        'id' => true,
+                    ],
+                    'transactionId' => [
+                        'fieldName' => 'transactionId',
+                        'type' => 'string',
+                        'scale' => 0,
+                        'length' => 60,
+                        'unique' => false,
+                        'nullable' => false,
+                        'precision' => 0,
+                        'columnName' => 'transaction_id',
+                    ],
+                    'paypalTransactionId' => [
+                        'fieldName' => 'paypalTransactionId',
+                        'type' => 'string',
+                        'scale' => 0,
+                        'length' => 60,
+                        'unique' => false,
+                        'nullable' => true,
+                        'precision' => 0,
+                        'columnName' => 'paypal_transaction_id',
+                    ],
+                    'origin' => [
+                        'fieldName' => 'origin',
+                        'type' => 'string',
+                        'scale' => 0,
+                        'length' => 100,
+                        'unique' => false,
+                        'nullable' => false,
+                        'precision' => 0,
+                        'columnName' => 'origin',
+                    ],
+                    'destination' => [
+                        'fieldName' => 'destination',
+                        'type' => 'string',
+                        'scale' => 0,
+                        'length' => 100,
+                        'unique' => false,
+                        'nullable' => false,
+                        'precision' => 0,
+                        'columnName' => 'destination',
+                    ],
+                    'distance' => [
+                        'fieldName' => 'distance',
+                        'type' => 'string',
+                        'scale' => 0,
+                        'length' => 100,
+                        'unique' => false,
+                        'nullable' => false,
+                        'precision' => 0,
+                        'columnName' => 'distance',
+                    ],
+                    'price' => [
+                        'fieldName' => 'price',
+                        'type' => 'float',
+                        'scale' => 0,
+                        'length' => null,
+                        'unique' => false,
+                        'nullable' => false,
+                        'precision' => 10,
+                        'columnName' => 'price',
+                    ],
+                    'createTime' => [
+                        'fieldName' => 'createTime',
+                        'type' => 'datetime',
+                        'scale' => 0,
+                        'length' => null,
+                        'unique' => false,
+                        'nullable' => true,
+                        'precision' => 0,
+                        'columnName' => 'create_time',
+                    ],
+                    'status' => [
+                        'fieldName' => 'status',
+                        'type' => 'string',
+                        'scale' => 0,
+                        'length' => 15,
+                        'unique' => false,
+                        'nullable' => false,
+                        'precision' => 0,
+                        'columnName' => 'status',
+                    ],
+                ],
+            ],
+            'fieldNames' => [
+                [
+                    'id' => 'id',
+                    'transaction_id' => 'transactionId',
+                    'paypal_transaction_id' => 'paypalTransactionId',
+                    'origin' => 'origin',
+                    'destination' => 'destination',
+                    'distance' => 'distance',
+                    'price' => 'price',
+                    'create_time' => 'createTime',
+                    'status' => 'status',
+                ],
+            ],
+            'columnNames' => [
+                [
+                    'id' => 'id',
+                    'transactionId' => 'transaction_id',
+                    'paypalTransactionId' => 'paypal_transaction_id',
+                    'origin' => 'origin',
+                    'destination' => 'destination',
+                    'distance' => 'distance',
+                    'price' => 'price',
+                    'createTime' => 'create_time',
+                    'status' => 'status',
+                ],
+            ],
+            'table' => [
+                [
+                    'name' => 'orders',
+                ],
+            ],
+            'idGenerator' => [
+                $o[1],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

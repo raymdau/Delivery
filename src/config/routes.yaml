@@ -1,0 +1,22 @@
+#index:
+#    path: /
+#    controller: App\Controller\DefaultController::index
+place-orders:
+    path:     /orders
+    controller: App\Controller\OrdersController::placeAction
+    methods: [POST]
+
+take-orders:
+    path:     /orders/{id}
+    controller: App\Controller\OrdersController::takeAction
+    methods: [PATCH]
+    defaults:
+        id:
+
+list-orders:
+    path:     /orders/list/{page}/{limit}
+    controller: App\Controller\OrdersController::listAction
+    methods: [GET]
+    defaults:
+        page:
+        limit:
