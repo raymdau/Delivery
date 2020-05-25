@@ -9,6 +9,9 @@ cd docker
 
 docker-compose up
 
+### Endpoints
+host: 127.0.0.1:8080
+
 ### Unit Test
 ```
 Directory: src/tests/OrdersTest.php
